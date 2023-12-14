@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //null은 값이 없음을 명시적으로 표시, undefined는 그냥 값이 없는 상태
+            alert(null == undefined)        //true
+            alert(null === undefined)       //false
+
+            alert(true == 1)                //true
+            alert(true === 1)               //false
+
+            alert(true == '1')              //true
+            alert(true === '1')             //false
+
+            //NaN은 0 / 0 과 같은 결과로 만들어지는 특수한 데이터 형 (숫자가 아님)
+            alert(0 === -0)                 //true
+            alert(NaN === NaN)              //false
+        </script>
+    </body>
+</html>
