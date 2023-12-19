@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            li = ['a', 'b', 'c', 'd', 'e']
+            li.push('f')                    // push() : 배열 끝에 원소 추가 (1개만 가능)
+            alert(li)
+
+            li2 = ['a', 'b', 'c', 'd', 'e']
+            li2 = li2.concat(['f', 'g'])    // concat() : 배열 끝에 원소 추가 (여러 개 가능)
+            alert(li2)
+
+            li3 = ['a', 'b', 'c', 'd', 'e']
+            li3.unshift('z')                // unshift() : 배열 맨 앞에 원소 추가 
+            alert(li3)
+
+            li4 = ['a', 'b', 'c', 'd', 'e']
+            li4.splice(2, 0, 'B')           // splice(A, B, C) : A 원소 ~ B 원소만큼 제거한 후 C 추가
+            alert(li4)
+
+        </script>
+    </body>
+</html>
