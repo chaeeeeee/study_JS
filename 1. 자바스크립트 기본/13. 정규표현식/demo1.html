@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // a 텍스트 찾아내는 방법 두가지
+            var pattern = /a/               // 방법 (1)
+            var paatern = new RegExp('a')   // 방법 (2)
+
+            // exec() : 문자열 존재하면 해당 문자열 리턴
+            alert(pattern.exec('abcdef'))   
+            alert(pattern.exec('bcdefg'))   // a가 없으므로 null 리턴된다.
+            
+            // test() : 문자열 존재하면 true 리턴
+            alert(pattern.test('abcdef'))
+            alert(pattern.test('bcdefg'))
+
+            // match() : 문자열 존재하면 해당 문자열 리턴
+            alert('abcdef'.match(pattern))
+            alert('bcdefg'.match(pattern))
+
+            // replace() : 존재하면 값 변경하여 리턴
+            alert('abcdef'.replace(pattern, 'A'))
+
+        </script>
+    </body>
+</html>
