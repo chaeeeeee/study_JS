@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            function get_member1() {
+                return '안녕'
+            }
+
+            function get_member2() {
+                return '하세요'
+            }
+
+            alert(get_member1())
+            alert(get_member2())
+
+            function get_member() {
+                return '여러분'         // return 되는 순간, 함수는 종료된다.
+                return '안녕'           // 그래서 안녕, 하세요는 return 되지 않는다.
+                return '하세요'
+            }
+
+            alert(get_member())
+
+        </script>
+    </body>
+</html>
