@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            // 객체 생성 방법 (1)
+            grades = {'사과' : 10, '포도' : 6, '딸기' : 80}
+            
+            // 객체 생성 방법 (2)
+            grades2 = {}
+            grades2['사과'] = 10
+            grades2['포도'] = 6
+            grades2['딸기'] = 80
+
+            // 객체 생성 방법 (3)
+            grades3 = new Object()
+            grades3['사과'] = 10
+            grades3['포도'] = 6
+            grades3['딸기'] = 80
+
+            // 객체 접근 방법 (1)
+            alert(grades['사과'])
+            alert(grades2['포도'])
+            alert(grades3['딸기'])
+
+            // 객체 접근 방법 (2)
+            alert(grades.딸기)
+            
+        </script>
+    </body>
+</html>
