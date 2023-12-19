@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            grades = {
+                'list' : {'스투시' : 20, '슈프림' : 10, '팔라스' : 6},
+                'show' : function() {
+                    for (name in this.list) {
+                        document.write(name + ': ' + this.list[name] + '<br />')
+                    }
+                }
+            }
+            
+            grades.show()
+            
+        </script>
+    </body>
+</html>
