@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            var xi = /a/;
+            alert("Abcde".match(xi));   
+
+            // i 붙이면 대소문자 구분하지 않는다.
+            var oi = /a/i;
+            alert("Abcde".match(oi));   
+
+            var xg = /a/;
+            alert("abcdea".match(xg));
+
+            // g 붙이면 검색된 모든 결과를 리턴한다.
+            var og = /a/g;
+            alert("abcdea".match(og));
+
+        </script>
+    </body>
+</html>
