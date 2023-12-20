@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 클로저: 내부함수가 외부함수의 맥락에 접근할 수 있는 것
+
+            function outter() {
+                var title = 'coding everyday'   // 내부 함수가 접근
+                function inner() { 
+                    alert(title)
+                }
+                inner()
+            }
+
+            outter()
+            
+        </script>
+    </body>
+</html>
