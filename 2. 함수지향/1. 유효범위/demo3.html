@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 전역변수는 되도록 사용하지 않는 것이 좋음.
+            // 굳이 사용해야 한다면? 하나의 객체를 전역변수로 만들고 객체의 속성으로 변수를 관리하는 방법을 사용
+
+            var MYAPP = {}
+            MYAPP.calculator = {
+                'left' : null,
+                'right' : null
+            }
+
+            MYAPP.coordinate = {
+                'left' : null,
+                'right' : null
+            }
+
+            MYAPP.calculator.left = 10
+            MYAPP.calculator.right = 20
+
+            function sum() {
+                return MYAPP.calculator.left + MYAPP.calculator.right
+            }
+
+            document.write(sum())
+
+        </script>
+    </body>
+</html>
