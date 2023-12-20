@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 외부함수 실행 끝나서 소멸된 이후에도 내부함수는 외부함수의 변수에 접근 가능
+
+            function outter() {
+                var title = 'coding everyday'
+                return function() {
+                    alert(title)
+                }
+            }
+
+            inner = outter()    // outter() 실행해서 inner에 저장. 그럼 outter는 없는 함수가 된다.
+            inner()             // inner() t실행하면서 소멸된 outter()의 title에 접근함
+
+        </script>
+    </body>
+</html>
