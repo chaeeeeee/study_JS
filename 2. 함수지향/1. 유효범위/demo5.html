@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // JS는 함수에 대해 유효범위를 제공한다.
+            // JAVA에서는 이 코드가 실행이 안 된다.
+            // 왜? name이 for문 안에 선언되어 있는데 name을 for문 밖에서 호출하기 때문
+            for (var i = 0; i < 1; i++) {
+                var name = 'coding everyday'
+            }
+
+            alert(name)
+
+        </script>
+    </body>
+</html>
