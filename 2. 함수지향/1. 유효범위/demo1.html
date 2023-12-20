@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            var vscope = 'global'       // 전역변수
+
+            function fscope() {
+                var vscope = 'local'    // 지역변수
+                alert('in 함수 ' + vscope)
+            }
+
+            fscope()
+            alert('out 함수 ' + vscope)
+
+        </script>
+    </body>
+</html>
