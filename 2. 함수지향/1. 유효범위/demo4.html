@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 전역변수는 되도록 사용하지 않는 것이 좋음.
+            // demo3.html은 전역변수 사용한건데, 사용하지 않도록 하려면?
+            // 익명함수 사용하기 !!!
+
+            (function() {
+                var MYAPP = {}
+                MYAPP.calculator = {
+                    'left' : null,
+                    'right' : null
+                }
+                MYAPP.coordinate = {
+                    'left' : null,
+                    'right' : null
+                }
+                MYAPP.calculator.left = 10
+                MYAPP.calculator.right = 20
+
+                function sum() {
+                    return MYAPP.calculator.left + MYAPP.calculator.right
+                }
+
+                document.write(sum())
+            }())
+
+        </script>
+    </body>
+</html>
