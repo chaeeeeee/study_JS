@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 값으로 전달된 함수는 호출될 수 있기 때문에 이를 이용하면 함수의 동작을 완전히 바꿀 수 있다.
+            function sortNumber(a, b) {
+                return b - a        // 내림차순 정렬됨 (b - a를 반환하기 때문)
+            }
+
+            var numbers = [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+            alert(numbers.sort(sortNumber))
+
+        </script>
+    </body>
+</html>
