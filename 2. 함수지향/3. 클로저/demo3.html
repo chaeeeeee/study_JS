@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 클로저는 객체의 메소드에서도 사용 가능 (함수의 리턴값으로 객체 반환)
+            // 이 메소드들은 외부함수인 factory_movie의 인자값으로 전달된 지역변수 title을 사용하고 있음
+            function factory_movie(title) {
+                return {
+                    get_title : function() {
+                        return title;
+                    },
+                    set_title : function(_title) {
+                        title = _title
+                    }
+                }
+            }
+
+            ghost = factory_movie('Ghost in the shell')
+            matrix = factory_movie('Matrix')
+
+            alert(ghost.get_title())
+            alert(matrix.get_title())
+
+            // 외부함수 factory_movie의 지역변수 title의 값을 변경
+            ghost.set_title('공각기동대')
+
+            // 값이 변경된 이유는 title의 값을 공유하고 있다는 의미
+            alert(ghost.get_title())
+            alert(matrix.get_title())
+
+        </script>
+    </body>
+</html>
