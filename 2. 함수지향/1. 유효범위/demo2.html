@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 지역변수일 때는 var 사용하는 게 좋다.
+            function a() {
+                var i = 0;
+            }
+
+            for (var i = 0; i < 5; i++) {
+                a();
+                document.write(i);
+            }
+            
+            // 전역변수일 때는 사용하는 이유를 명확히 알고 있을 경우에만 var 사용
+            function a() {
+                i = 0;
+            }
+
+            for (i = 0; i < 5; i++) {
+                a();
+                document.write(i);
+            }
+
+        </script>
+    </body>
+</html>
