@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 함수의 메소드인 apply, call을 사용하면 this의 값 제어 가능!
+            var o = {}
+            var p = {}
+            function func(){
+                switch(this){
+                    case o:
+                        document.write('o<br />');
+                        break;
+                    case p:
+                        document.write('p<br />');
+                        break;
+                    case window:
+                        document.write('window<br />');
+                        break;          
+                }
+            }
+
+            func();         // window
+            func.apply(o);  // o
+            func.apply(p);  // p
+
+        </script>
+    </body>
+</html>
