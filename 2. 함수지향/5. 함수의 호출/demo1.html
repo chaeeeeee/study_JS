@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // apply : 두 개의 인자를 가질 수 있음.
+            // 첫 번째 인자는 함수(sum)가 실행될 맥락
+            // 두 번째 인자는 배열인데, 이 배열에 담겨있는 원소가 함수(sum)의 인자로 순차적으로 대입된다
+            function sum(arg1, arg2) {
+                return arg1 + arg2
+            }
+
+            alert(sum.apply(null, [1, 2]))
+
+        </script>
+    </body>
+</html>
