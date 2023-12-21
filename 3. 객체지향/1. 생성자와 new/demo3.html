@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 여러 사람을 위한 객체를 만든다면?
+            // 생성자 함수는 일반함수와 구별하기 위해 첫글자를 대문자로 ~!
+            function Person(name) {
+                this.name = name
+                this.introduce = function() {
+                    return 'My name is ' + this.name
+                }
+            }
+
+            var p1 = new Person('박채은')
+            document.write(p1.introduce() + '<br />')
+
+            var p2 = new Person('박깻잎')
+            document.write(p2.introduce() + '<br />')
+
+        </script>
+    </body>
+</html>
