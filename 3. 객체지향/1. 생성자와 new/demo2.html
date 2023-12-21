@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // 생성자는 객체를 만드는 역할을 하는 함수
+
+            function Person() {}
+            var p = new Person()        //함수를 호출할 때 new를 붙이면 새로운 객체를 만든 후에 이를 리턴한다.
+            p.name = '박채은'
+            p.introduce = function() {
+                return 'My name is ' + this.name
+            }
+
+            document.write(p.introduce())
+
+        </script>
+    </body>
+</html>
