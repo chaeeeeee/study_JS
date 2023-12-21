@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            function func() {
+                alert('Hello?')
+            }
+
+            func()
+            window.func()
+
+
+            var o = {'func' : function() {
+                alert('Hi~')
+            }}
+
+            o.func()
+            window.o.func()
+            
+        </script>
+    </body>
+</html>
