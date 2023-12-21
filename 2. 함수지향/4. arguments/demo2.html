@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // arguments.length : 함수로 전달된 실제 인자의 수
+            // 함수.length : 함수에 정의된 인자의 수
+            function zero() {
+                console.log(
+                    'zero.length', zero.length,
+                    'arguments', arguments.length
+                );
+            }
+            
+            function one(arg1) {
+                console.log(
+                    'one.length', one.length,
+                    'arguments', arguments.length
+                )
+            }
+
+            function two(arg1, arg2) {
+                console.log(
+                    'two.length', two.length,
+                    'arguments', arguments.length
+                )
+            }
+
+            zero()                  // 0 0
+            one('val1', 'val2')     // 1 2
+            two('val1')             // 2 1
+
+        </script>
+    </body>
+</html>
