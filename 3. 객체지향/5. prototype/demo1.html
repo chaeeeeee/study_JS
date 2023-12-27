@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            // prototype : 객체의 원형
+             
+            function Ultra(){}
+            Ultra.prototype.ultraProp = true
+            
+            function Super(){}
+            Super.prototype = new Ultra()
+            
+            function Sub(){}
+            Sub.prototype = new Super()
+            
+            // Sub 객체 생성하고 ultraProp에 접근한다면? -> prototype 사용하면 가능 ~
+            // Sub에는 ultraProp가 없음. 그러나 Sub의 부모(Super)의 부모(Ultra)에 ultraProp가 있음
+            var o = new Sub()
+            alert(o.ultraProp)      // 결과 : true
+
+        </script>
+    </body>
+</html>
