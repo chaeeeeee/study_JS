@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            //Object: 최초 조상 객체 (아무것도 상속받지 않은 객체)
+            Object.prototype.contain = function (neddle) {
+                for (var name in this){
+                    if(this[name] === neddle){
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            var o = {'name':'박채은', 'city':'화성'}
+            alert(o.contain('박채은'));
+            var a = ['박채은','송강','이진욱'];
+            alert(a.contain('송강'));
+
+        </script>
+    </body>
+</html>
