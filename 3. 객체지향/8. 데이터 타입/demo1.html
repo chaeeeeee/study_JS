@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            
+            //데이터 타입은 크게 두 가지로 분류
+            //1. 객체
+            //2. 객체가 아닌 것 (숫자, 문자열, boolean, null, undefined)
+
+            //문자열은 객체이지만, str.length와 같은 메소드 사용할 때는 문자열이 객체로 변환되는 느낌인 듯
+            var str = '박채은';
+            alert(str.length);      //3
+            alert(str.charAt(0));   //박
+
+            //문자열을 객체처럼 사용하기 때문에 undefined가 발생
+            var str2 = '뉴진스';
+            str2.prop = '버니즈';
+            alert(str2.prop);       //undefined
+
+        </script>
+    </body>
+</html>
